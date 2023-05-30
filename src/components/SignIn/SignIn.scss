@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.signin{
+    margin: 0 auto;
+    display: flex;
+background-color: #FFFFFF;
+    width: 1152px;
+    height: 700px;
+
+    .left {
+        width: 50%;
+        height: 100%;
+        background: rgba(201, 172, 140, 0.93);
+
+        img {
+            margin-top: 100px;
+            margin-left: 38px;
+        }
+
+    }
+
+    .right {
+        .wrapper {
+            margin-left: 135px;
+
+            .up__text {
+                margin-top: 191px;
+                font-family: 'Arial Black';
+                font-style: normal;
+                font-weight: 900;
+                line-height: 51px;
+                font-size: 36px;
+            }
+
+            .up__item {
+                margin-top: -15px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+            }
+
+            input {
+                margin-top: 21px;
+                background: #FFFFFF;
+                border: 1px solid #B4B4BB;
+                border-radius: 10px;
+                width: 330px;
+                height: 46px;
+                outline: none;
+
+            }
+            input::placeholder {
+                padding-left: 29px;
+                color: #AAAAAA;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            .up__btn {
+                margin-top: 34px;
+                background: #152540;
+                border-radius: 99px;
+                color: #FFFFFF;
+                width: 328px;
+                height: 46px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 36px;
+            }
+        }
+    }
+}
