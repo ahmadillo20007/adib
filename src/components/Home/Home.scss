@@ -1,0 +1,18 @@
+header{
+    align-items: center;
+    display: flex;
+    .header__list{
+        width: 500px;
+        display: flex;
+        list-style-type: none;
+        .header__list__item{
+            margin-left: 60px;
+        }
+    }
+    .header__img{
+        margin-left: 138px;
+    }
+    .icons{
+        margin-left: 203px;
+    }
+}
