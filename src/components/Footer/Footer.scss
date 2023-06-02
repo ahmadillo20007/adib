@@ -1,0 +1,32 @@
+.footer{
+    background: #F5F5F5;
+    .wrapper{
+        justify-content: space-between;
+display: flex;
+align-items: center;
+        .info{
+            
+        }
+        .facebook   {
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 20px;
+            }
+        }
+        .twitter   {
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 20px;
+            }
+        }
+        .instagram   {
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 20px;
+            }
+            }
+    }
+}

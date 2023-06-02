@@ -1,0 +1,36 @@
+.project__text{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+
+}
+.project__item{
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 35px;
+margin-top: 32px;
+display: flex;
+justify-content: center;
+}
+.project__list{
+    justify-content: space-between;
+    display: flex;
+flex-wrap: wrap;
+    list-style-type: none;
+    .project__list__item{
+        margin-top: 100px;
+        width: 297px;
+        height: 457px;
+        .project__name{
+            margin-left: 60px;
+        }
+        .project__cost{
+          
+        }
+    }
+}
+.project__img{
+    margin-left: 1500px;
+}
