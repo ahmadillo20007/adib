@@ -5,6 +5,7 @@ import search from '../../img/search.png'
 import person from '../../img/person.png'
 import shop from '../../img/shop.png'
 import heart from '../../img/heart.png'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -28,8 +29,9 @@ function Home() {
           <img className='header__img' src={logo} alt="" />
           <div className="icons">
             <input placeholder='Search...' type="text" name="" id="" />
+            <hr />
  <img src={search} alt="" />
- <img src={person} alt="" />
+<Link to={'/login'} > <img src={person} alt="" /></Link>
  <img src={shop} alt="" />
  <img src={heart} alt="" />
        
