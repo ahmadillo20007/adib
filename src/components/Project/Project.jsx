@@ -11,11 +11,11 @@ function Project() {
   return (
     <div className='project'>
         <div className="container">
-            <hr />
+            
             <h1 className='project__text'>
-            Shop your style
+ --------------------------------           Shop your style             --------------------------------
             </h1>
-            <hr />
+         
             <p className='project__item'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae gravida cursus adipiscing <br />
 viverra at tortor, egestas odio parturient. Morbi ut lorem in erat. Et et molestie diam diam ultricies. <br />
