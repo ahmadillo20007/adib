@@ -9,7 +9,7 @@ import heart from '../../img/heart.png'
 function Header() {
   return (
     <div>
-              <header id='#top'>
+              <header className='head' id='#top'>
           <ul className='header__list'>
            <li className='header__list__item'>
             Home

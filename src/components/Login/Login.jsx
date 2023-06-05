@@ -1,9 +1,13 @@
 import React from 'react'
 import './Login.scss'
 import { Link } from 'react-router-dom'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 
 function Login() {
   return (
+    <>
+    <Header/>
     <div className='Login'>
       <div className="container">
         <h1 className='Login__title1'>Hello there!</h1>
@@ -45,6 +49,8 @@ function Login() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

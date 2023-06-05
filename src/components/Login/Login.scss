@@ -1,71 +1,74 @@
-.Login__title1{
-    margin-left: 231px;
-}
-.Login__title2{
-    margin-left: 231px;
-}
-.Login__right__left{
-    display: flex;
-}
-
-/// LEFT ///
-.Login__left{
-    margin-left: 231px;
-    margin-right: 200px;
-}
-.Login__left__inp{
-    height: 60px;
-    width: 409px;
-    left: 800px;
-    top: 460px;
-    border-radius: 6px;   
-    border: none;
-    border: 1px solid #000; 
-}
-.Login__left__inp__check{
-    background-color: #ED165F;
-    border-radius: 4px;
-    width: 15px;
-    height: 15px;
-}
-.Login__left__btn{
-    background-color: #ED165F;
-    color: #fff;
-    height: 47px;
-    width: 409px;
-    left: 231px;
-    top: 592px;
-    border-radius: 6px;
-    border: none;    
-}
-.Login__left__link{
-    color: #000;
-}
-
-/// RIGHT ///
-.Login__right__inp{   
-    height: 60px;
-    width: 409px;
-    left: 800px;
-    top: 460px;
-    border-radius: 6px;
-    border: none;
-    border: 1px solid #000; 
-}
-.Login__right__btn{
-    height: 47px;
-    width: 409px;
-    left: 800px;
-    top: 1001px;
-    border-radius: 6px;
-    background-color: #ED165F;
-    color: #fff;
-    border: none;    
-}
-.Login__right__title7{
-    margin-left: 19px;
-}
-.Login__right__check{
-    width: 15px;
-    height: 15px;
+.Login{
+    margin-top: 64px;
+    .Login__title1{
+        margin-left: 231px;
+    }
+    .Login__title2{
+        margin-left: 231px;
+    }
+    .Login__right__left{
+        display: flex;
+    }
+    
+    /// LEFT ///
+    .Login__left{
+        margin-left: 231px;
+        margin-right: 200px;
+    }
+    .Login__left__inp{
+        height: 60px;
+        width: 409px;
+        left: 800px;
+        top: 460px;
+        border-radius: 6px;   
+        border: none;
+        border: 1px solid #000; 
+    }
+    .Login__left__inp__check{
+        background-color: #ED165F;
+        border-radius: 4px;
+        width: 15px;
+        height: 15px;
+    }
+    .Login__left__btn{
+        background-color: #ED165F;
+        color: #fff;
+        height: 47px;
+        width: 409px;
+        left: 231px;
+        top: 592px;
+        border-radius: 6px;
+        border: none;    
+    }
+    .Login__left__link{
+        color: #000;
+    }
+    
+    /// RIGHT ///
+    .Login__right__inp{   
+        height: 60px;
+        width: 409px;
+        left: 800px;
+        top: 460px;
+        border-radius: 6px;
+        border: none;
+        border: 1px solid #000; 
+    }
+    .Login__right__btn{
+        height: 47px;
+        width: 409px;
+        left: 800px;
+        top: 1001px;
+        border-radius: 6px;
+        background-color: #ED165F;
+        color: #fff;
+        border: none;    
+    }
+    .Login__right__title7{
+        margin-left: 19px;
+    }
+    .Login__right__check{
+        width: 15px;
+        height: 15px;
+    }
 }
