@@ -4,13 +4,14 @@ import logo from '../../img/Logo.svg'
 import i1 from '../../img/i1.png'
 import i2 from '../../img/i2.png'
 import i3 from '../../img/i3.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
         <div className='footer'>
             <div className="container">
                 <div className="wrapper">
-                    <img src={logo} alt="" />
+                 <Link to={'/'}>   <img src={logo} alt="" /></Link>
                     <div className="info">
                         <p>
                             About Us
@@ -44,7 +45,10 @@ Instagram
                     </div>
                     <div className="massage">
                         Subscribe to our newsletter <br />
-                        <input placeholder='Email Address' type="text" name="" id="" />
+                        <input className='massage__int' placeholder='Email Address' type="text" name="" id="" />
+                        <button className='massage__btn'>
+                            ok
+                        </button>
                     </div>
                     <div className="addres">
                         <p>
