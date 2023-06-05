@@ -6,7 +6,7 @@ function Login() {
   return (
     <div className='Login'>
       <div className="container">
-        <h2 className='Login__title1'>Hello there!</h2>
+        <h1 className='Login__title1'>Hello there!</h1>
         <p className='Login__title2'>Please sign in or create account to continue</p>
         <div className="Login__right__left">
           <div className="Login__left">
@@ -15,7 +15,10 @@ function Login() {
             <input className='Login__left__inp' type="email" />
             <p className='Login__left__title3'>Password</p>
             <input className='Login__left__inp' type="password" /><br /><br />
-            <input className='Login__left__inp__check' type="checkbox" />Remeber my details <br /><br />
+            <label for="check1">
+            <input type="checkbox" id='check1' />
+            Remeber my details
+        </label> <br /><br />
             <button className='Login__left__btn'>SIGN IN</button><br /><br />
             <Link className='Login__left__link'>Forgot password?</Link>
           </div>
@@ -31,9 +34,11 @@ function Login() {
             <input className='Login__right__inp' type="password" />
             <p className='Login__right__title6'>Confirm Password</p>
             <input className='Login__right__inp' type="password" /><br /><br />
-            <input className='Login__right__inp__check' type="checkbox" />
-            <i>I want to receive Safari newsletters with the best deals 
-            <br /> <span className='Login__right__title7'>and offers </span></i>
+            <label for="check2">
+            <input type="checkbox" id='check2' />
+            I want to receive Safari newsletters with the best deals 
+            <br /> <span className='Login__right__title7'>and offers </span>
+            </label>
             <br /><br />
             <button className='Login__right__btn'>CREATE ACCOUNT</button>
           </div>

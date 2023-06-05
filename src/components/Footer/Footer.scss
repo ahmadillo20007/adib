@@ -1,0 +1,50 @@
+.footer{
+    margin-top: 100px;
+    background: #F5F5F5;
+    .wrapper{
+        justify-content: space-between;
+display: flex;
+align-items: center;
+        .info{
+            
+        }
+        .facebook   {
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 20px;
+            }
+        }
+        .twitter   {
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 20px;
+            }
+        }
+        .instagram   {
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 20px;
+            }
+            }
+    }
+}
+.massage__int{
+    border: 1px solid #ED165F;
+    width: 209px;
+    height: 39px;
+}
+.massage__int::placeholder{
+    padding-left: 20.45px;
+    margin-top: 23px;
+}
+.massage__btn{
+    background: #ED165F;
+    width: 61px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    margin-top: 23px;
+}

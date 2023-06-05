@@ -20,8 +20,9 @@
 }
 .Login__left__inp__check{
     background-color: #ED165F;
-    color: #ED165F;
-    border-radius: 10px;
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
 }
 .Login__left__btn{
     background-color: #ED165F;
@@ -29,6 +30,9 @@
     border-radius: 6px;
     padding: 7px 110px;
     border: none;
+}
+.Login__left__link{
+    color: #000;
 }
 
 /// RIGHT ///
@@ -47,6 +51,7 @@
 .Login__right__title7{
     margin-left: 19px;
 }
-.Login__left__link{
-    color: #000;
+.Login__right__check{
+    width: 15px;
+    height: 15px;
 }

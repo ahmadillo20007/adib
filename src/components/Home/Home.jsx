@@ -6,12 +6,17 @@ import person from '../../img/person.png'
 import shop from '../../img/shop.png'
 import heart from '../../img/heart.png'
 import { Link } from 'react-router-dom'
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+import Hero from '../Hero/Hero'
 function Home() {
-  return (
+return (
+<>
     <div className='home'>
       <div className="container">
-        <header>
+        <header id='#top'>
           <ul className='header__list'>
            <li className='header__list__item'>
             Home
@@ -29,16 +34,24 @@ function Home() {
           <img className='header__img' src={logo} alt="" />
           <div className="icons">
             <input placeholder='Search...' type="text" name="" id="" />
-            <hr />
- <img src={search} alt="" />
+         
+<Link to={'/search'}> <img src={search} alt="" /></Link>
 <Link to={'/login'} > <img src={person} alt="" /></Link>
- <img src={shop} alt="" />
- <img src={heart} alt="" />
+ <Link to={'/shop'}><img src={shop} alt="" /></Link>
+<Link to={'/heart'}> <img src={heart} alt="" /></Link>
        
           </div>
+     
         </header>
       </div>
     </div>
+        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+        <SwiperSlide><Hero/></SwiperSlide>
+        <SwiperSlide><Hero/></SwiperSlide>
+        <SwiperSlide><Hero/></SwiperSlide>
+        <SwiperSlide><Hero/></SwiperSlide>
+      </Swiper>
+      </>
   )
 }
 
