@@ -9,6 +9,7 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 function Project() {
+    
     console.log(Data);
     const fn = (e)=>{
         console.log(e.target.textContent);
@@ -55,11 +56,7 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
     ))
 }
             </ul>
-               <Stack spacing={2}>
-
-      <Pagination onClick={fn} count={50} variant="outlined" shape="rounded" />
-
-    </Stack>
+ 
            <img id='top' className='project__img' src={top} alt="" />
         </div>
     </div>

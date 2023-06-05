@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer'
 
 function Login() {
   return (
-    <>
+    <div className='container'>
     <Header/>
     <div className='Login'>
       <div className="container">
@@ -50,7 +50,7 @@ function Login() {
       </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
 
