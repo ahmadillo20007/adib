@@ -38,7 +38,7 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
         
         <li className='project__list__item'>
    
-<img src={img1} alt="" />
+<img src={item.img} alt="" />
 
 <p className='project__name'>
 {
@@ -47,9 +47,11 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
 </p>
 <br />
 
+<i>
 {
     item.cost
 }
+</i>
 
    
                 </li>
