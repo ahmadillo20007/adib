@@ -5,24 +5,28 @@ import search from '../../img/search.png'
 import person from '../../img/person.png'
 import shop from '../../img/shop.png'
 import heart from '../../img/heart.png'
+import './Header.scss'
 
 function Header() {
   return (
-    <div className='container'>
+   <div className="header">
+     <div className='container'>
               <header className='head' id='#top'>
           <ul className='header__list'>
-           <li className='header__list__item'>
-            Home
-           </li>
-           <li className='header__list__item'>
-           Clothes
-           </li>
-           <li className='header__list__item'>
-           Shoes
-           </li>
-           <li className='header__list__item'>
-           Accessories
-           </li>
+          <li className='header__list__item'>
+              <Link to={'/'}>
+              Home
+              </Link>
+              </li>
+              <li className='header__list__item'>
+                <Link to={'/clothes'}>Clothes</Link>
+              </li>
+              <li className='header__list__item'>
+                <Link to={'/shoes'}>Shoes</Link>
+              </li>
+              <li className='header__list__item'>
+                <Link to={'/accessories'}>Accessories</Link>
+              </li>
           </ul>
 <Link to={'/'}>
 <img className='header__img' src={logo} alt="" />
@@ -38,6 +42,7 @@ function Header() {
      
         </header>
     </div>
+   </div>
   )
 }
 

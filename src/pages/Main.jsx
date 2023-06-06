@@ -1,15 +1,16 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
-import Home from '../components/Home/Home'
 import Project from '../components/Project/Project'
+import Header from '../components/Header/Header'
 
 
 function Main() {
   return (
     <div>
      
-<Home/>
+<Header/>
+<Hero/>
 <Project/>
 <Footer/>
     </div>
