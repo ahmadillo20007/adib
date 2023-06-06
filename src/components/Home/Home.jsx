@@ -31,8 +31,9 @@ function Home() {
                 Accessories
               </li>
             </ul>
+<Link to={'/'}>
             <img className='header__img' src={logo} alt="" />
-            <div className="icons">
+</Link>            <div className="icons">
               <input placeholder='Search...' type="text" name="" id="" />
 
               <Link to={'/search'}> <img src={search} alt="" /></Link>

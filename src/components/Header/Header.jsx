@@ -8,7 +8,7 @@ import heart from '../../img/heart.png'
 
 function Header() {
   return (
-    <div>
+    <div className='container'>
               <header className='head' id='#top'>
           <ul className='header__list'>
            <li className='header__list__item'>
@@ -24,8 +24,9 @@ function Header() {
            Accessories
            </li>
           </ul>
-          <img className='header__img' src={logo} alt="" />
-          <div className="icons">
+<Link to={'/'}>
+<img className='header__img' src={logo} alt="" />
+</Link>          <div className="icons">
             <input placeholder='Search...' type="text" name="" id="" />
          
 <Link to={'/search'}> <img src={search} alt="" /></Link>

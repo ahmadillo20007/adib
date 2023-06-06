@@ -1,7 +1,7 @@
 export const Data =[
     {
         id:1,
-        img: `../img/img1.png`,
+        img: `../img/img1.svg`,
         name: `Multicolored armless top`,
         cost:` ₦ 10,000`
     },

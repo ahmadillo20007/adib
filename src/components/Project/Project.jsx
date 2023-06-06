@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import './Project.scss'
-import i1 from '../../img/img1.png'
+import img1 from '../../img/img1.png'
 import { Data } from '../../data/Data'
 import "swiper/css";
 import "swiper/css/navigation";
@@ -38,7 +38,7 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
         
         <li className='project__list__item'>
    
-<img src={i1} alt="" />
+<img src={img1} alt="" />
 
 <p className='project__name'>
 {
