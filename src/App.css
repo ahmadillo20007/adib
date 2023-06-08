@@ -9,3 +9,6 @@ color: #000000;
 a:active{
   color: #ED165F;
 }
+html{
+  scroll-behavior: smooth;
+}

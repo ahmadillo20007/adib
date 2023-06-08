@@ -9,9 +9,9 @@ import './Header.scss'
 
 function Header() {
   return (
-   <div className="header">
+   <div className="header" id='header'>
      <div className='container'>
-              <header className='head' id='#top'>
+              <header className='head' id='#header'>
           <ul className='header__list'>
           <li className='header__list__item'>
               <Link to={'/'}>

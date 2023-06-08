@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import top from '../../img/top.png'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom';
 
 function Project() {
     
@@ -59,8 +60,12 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
 }
             </ul>
  
-           <img id='top' className='project__img' src={top} alt="" />
-        </div>
+<a href="#header" >
+<img id='top' className='project__img' src={top} alt="" />
+
+</a>  
+
+      </div>
     </div>
   )
 }

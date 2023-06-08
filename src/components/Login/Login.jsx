@@ -15,28 +15,29 @@ useEffect(()=>{
 const handlerSignIn = (e) =>{
   e.preventDefault()
   let newUser = {
-    email:e.target.email.value,
-    password:e.target.password.value
+    email:e.target.elements.email.value,
+    password:e.target.elements.password.value
   }
-  if(data.find((item)=> item.email == newUser.email && item.password == newUser.password)){
-    navigate('/settings')
-  }
+  if( data.find((item) => item.email == newUser.email && item.password == newUser.password))
+{
+  navigate('/settings')
+} 
 }
 // _______________________________________________________________________________________________________
 
 
 const register = (i) =>{
   i.preventDefault()
-  console.log(i.target.firstName.value);
-  console.log(i.target.lastName.value);
-  console.log(i.target.email.value);
-  console.log(i.target.password.value);
+  console.log(i.target.elements.firstName.value);
+  console.log(i.target.elements.lastName.value);
+  console.log(i.target.elements.email.value);
+  console.log(i.target.elements.password.value);
   // console.log(e.target.password.value);
   let newUser = {
-    firstName: i.target.firstName.value,
-    lastName: i.target.lastName.value,
-    email: i.target.email.value,
-    password: i.target.password.value
+    firstName: i.target.elements.firstName.value,
+    lastName: i.target.elements.lastName.value,
+    email: i.target.elements.email.value,
+    password: i.target.elements.password.value
 }
 fetch('https://647092d63de51400f7248a57.mockapi.io/login',{
     method: 'POST',
@@ -63,7 +64,8 @@ return (
         <p className='Login__title2'>Please sign in or create account to continue</p>
         <div className="Login__right__left">
           <div className="Login__left">
-            <h3 className='Login__left__title1'>SIGN IN</h3>
+           <form onSubmit={handlerSignIn} action="#">
+           <h3 className='Login__left__title1'>SIGN IN</h3>
             <p className='Login__left__title2'>Email</p>
             <input name='email' className='Login__left__inp' type="email" />
             <p className='Login__left__title3'>Password</p>
@@ -71,13 +73,15 @@ return (
             <label for="check1">
             <input type="checkbox" id='check1' />
             Remeber my details
-        </label> <br /><br />
-            <button onClick={handlerSignIn} className='Login__left__btn'>SIGN IN</button><br /><br />
+               </label> <br /><br />
+            <button  className='Login__left__btn'>SIGN IN</button><br /><br />
             <Link className='Login__left__link'>Forgot password?</Link>
+           </form>
 
           </div>
           <div className="Login__right">
-            <h3 className='Login__right__title1'>CREATE ACCOUNT</h3>
+   <form onSubmit={register} action="#">
+   <h3 className='Login__right__title1'>CREATE ACCOUNT</h3>
             <p className='Login__right__title2'>First name</p>
             <input name='firstName' className='Login__right__inp' type="text" />
             <p className='Login__right__title3'>Last name</p>
@@ -94,7 +98,8 @@ return (
             <br /> <span className='Login__right__title7'>and offers </span>
             </label>
             <br /><br />
-            <button onClick={register} className='Login__right__btn'>CREATE ACCOUNT</button>
+            <button className='Login__right__btn'>CREATE ACCOUNT</button>
+   </form>
           </div>
         </div>
       </div>

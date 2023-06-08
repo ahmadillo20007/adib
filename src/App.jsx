@@ -9,7 +9,7 @@ import Settings from './components/Settings/Settings';
 import Clothes from './components/Clothes/Clothes';
 import Shoes from './components/Shoes/Shoes';
 import Accessories from './components/Accessories/Accessories';
-
+import Header from './components/Header/Header';
 function App() {
   return (
     <div className="App">
@@ -23,6 +23,8 @@ function App() {
 <Route path='/clothes' element={<Clothes/>}/>
 <Route path='/shoes' element={<Shoes/>}/>
 <Route path='/accessories' element={<Accessories/>}/>
+<Route path='/main' element={<Main/>}/>
+<Route path='/header' element={<Header/>}/>
 
       </Routes>
     </div>
