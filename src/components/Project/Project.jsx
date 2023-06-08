@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import './Project.scss'
 import img1 from '../../img/img1.png'
 import { Data } from '../../data/Data'
@@ -8,18 +8,12 @@ import top from '../../img/top.png'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
+import HeartIcon from '../HeartIcon/HeartIcon';
 
-function Project() {
+
+function Project(){
+
     
-    console.log(Data);
-    const fn = (e)=>{
-        console.log(e.target.textContent);
-        if(e.target.textContent == 1){
-            console.log(Data.slice(0,10));    
-        }else{
-            console.log(Data.slice(10 * (e.target.textContent - 1), e.target.textContent * 10 + 10));
-        }
-    }
   return (
     <div className='project'>
         <div className="container">
@@ -41,6 +35,7 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
    
 <img src={item.img} alt="" />
 
+
 <p className='project__name'>
 {
     item.name
@@ -53,6 +48,7 @@ Scelerisque duis diam ac cras dictum adipiscing. Venenatis at sit proin ut vitae
     item.cost
 }
 </i>
+<HeartIcon/>
 
    
                 </li>
